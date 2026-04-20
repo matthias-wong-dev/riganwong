@@ -15,12 +15,14 @@
     }
 
 :root {
-  --cream: #f7f4ef;
-  --ink: #1a1916;
-  --mid: #6b6760;
-  --light: #b8b3ac;
-  --rule: #ddd9d3;
-  --accent: #8c6b4e;
+  --cream: #feffff;
+  --ink: #202833;
+  --mid: #536273;
+  --light: #9aa7b4;
+  --rule: #d7e0e8;
+  --accent: #2f6ea3;
+  --accent-soft: #eaf2f8;
+  --shadow: rgba(47, 110, 163, 0.08);
 }
 
 html {
@@ -28,7 +30,7 @@ html {
 }
 
 body {
-  background: var(--cream);
+  background: #ffffff;
   color: var(--ink);
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
@@ -55,7 +57,7 @@ body {
   display: inline-block;
   width: 48px;
   height: 48px;
-  border: 1.5px solid var(--ink);
+  border: 1.5px solid rgba(47, 110, 163, 0.4);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -65,8 +67,10 @@ body {
   font-weight: 400;
   font-size: 1rem;
   letter-spacing: 0.04em;
-  color: var(--ink);
+  color: var(--accent);
   flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 24px var(--shadow);
 }
 
 /* ── Header ── */
@@ -161,7 +165,7 @@ hr {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: var(--rule);
+  background: rgba(47, 110, 163, 0.45);
 }
 
 /* ── Languages ── */
@@ -247,7 +251,7 @@ footer .copy {
 }
 
 .lang-btn {
-  background: none;
+  background: rgba(255, 255, 255, 0.65);
   border: 1px solid var(--rule);
   border-radius: 2px;
   padding: 0.28rem 0.7rem;
@@ -257,11 +261,22 @@ footer .copy {
   letter-spacing: 0.1em;
   color: var(--light);
   cursor: pointer;
-  transition: border-color 0.2s, color 0.2s;
+  transition: border-color 0.2s, color 0.2s, background-color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 6px 18px rgba(32, 40, 51, 0.04);
 }
 
-.lang-btn:hover { color: var(--mid); border-color: var(--mid); }
-.lang-btn.active { border-color: var(--accent); color: var(--accent); }
+.lang-btn:hover {
+  color: var(--mid);
+  border-color: rgba(47, 110, 163, 0.4);
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.lang-btn.active {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-soft);
+  box-shadow: 0 10px 24px var(--shadow);
+}
 
 .t { display: none; }
 .t.active { display: block; }
