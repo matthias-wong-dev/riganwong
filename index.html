@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rigan Wong</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+```
+:root {
+  --cream: #f7f4ef;
+  --ink: #1a1916;
+  --mid: #6b6760;
+  --light: #b8b3ac;
+  --rule: #ddd9d3;
+  --accent: #8c6b4e;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  line-height: 1.7;
+  min-height: 100vh;
+  padding: 0 1.5rem;
+  opacity: 0;
+  animation: fadeIn 0.9s ease forwards;
+  animation-delay: 0.1s;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+.page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 4rem 0 5rem;
+}
+
+/* ── Monogram ── */
+.monogram {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border: 1.5px solid var(--ink);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.2rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+  flex-shrink: 0;
+}
+
+/* ── Header ── */
+header {
+  margin-bottom: 2.8rem;
+}
+
+h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  font-size: 2.4rem;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.4rem;
+}
+
+.subtitle {
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mid);
+  margin-bottom: 0.25rem;
+}
+
+.location {
+  font-size: 0.8rem;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--light);
+}
+
+/* ── Rule ── */
+hr {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 2rem 0;
+}
+
+/* ── Lead ── */
+.lead {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--ink);
+  margin-bottom: 1.4rem;
+}
+
+.body-text {
+  font-size: 0.92rem;
+  color: var(--mid);
+  margin-bottom: 1rem;
+}
+
+/* ── Sections ── */
+.section {
+  margin-bottom: 2.4rem;
+}
+
+.section-label {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.9rem;
+}
+
+/* ── Tag grid ── */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.2rem;
+}
+
+.tag {
+  font-size: 0.83rem;
+  color: var(--mid);
+  font-weight: 300;
+  position: relative;
+  padding-left: 0.85rem;
+}
+
+.tag::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--rule);
+}
+
+/* ── Languages ── */
+.languages {
+  display: flex;
+  gap: 1.4rem;
+  flex-wrap: wrap;
+}
+
+.lang {
+  font-size: 0.83rem;
+  color: var(--mid);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+/* ── Links ── */
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.link-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.8rem;
+}
+
+.link-row a {
+  font-size: 0.83rem;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 1px;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.link-row a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.link-desc {
+  font-size: 0.78rem;
+  color: var(--light);
+}
+
+/* ── Footer ── */
+footer {
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+footer a {
+  font-size: 0.75rem;
+  color: var(--light);
+  text-decoration: none;
+  letter-spacing: 0.06em;
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: var(--ink);
+}
+
+footer .copy {
+  font-size: 0.75rem;
+  color: var(--light);
+}
+
+.lang-switcher {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2.6rem;
+}
+
+.lang-btn {
+  background: none;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  padding: 0.28rem 0.7rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: var(--light);
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.lang-btn:hover { color: var(--mid); border-color: var(--mid); }
+.lang-btn.active { border-color: var(--accent); color: var(--accent); }
+
+.t { display: none; }
+.t.active { display: block; }
+```
+
+  </style>
+</head>
+<body>
+  <div class="page">
+
+```
+<div class="lang-switcher">
+  <button class="lang-btn active" onclick="setLang('en', this)">English</button>
+  <button class="lang-btn" onclick="setLang('yue', this)">廣東話</button>
+  <button class="lang-btn" onclick="setLang('zh', this)">普通話</button>
+</div>
+
+<div class="t active" id="en">
+<div class="monogram">RW</div>
+
+<header>
+  <h1>Rigan Wong</h1>
+  <p class="subtitle">Occupational Therapist &amp; Rehabilitation Consultant</p>
+  <p class="location">Sydney, Australia</p>
+</header>
+
+<hr />
+
+<p class="lead">Behind every injury is a person trying to find their way back — to their family, their routine, their sense of self.</p>
+
+<p class="body-text">
+  That's what drives me. For over 20 years, I've walked alongside people navigating some of the most difficult moments of their lives — after workplace injuries, motor vehicle accidents, and through the challenges of disability and ageing. I don't just help people return to work. I help them come back to life.
+</p>
+
+<p class="body-text">
+  I believe recovery is deeply personal. Every person I work with has a unique story, and I take time to truly understand what matters to them — what they've lost, what they're hoping for, and what it would mean to get there. I bring that same care into every conversation with families, healthcare providers, case managers, and insurers.
+</p>
+
+<hr />
+
+<div class="section">
+  <p class="section-label">Practice Areas</p>
+  <div class="tags">
+    <span class="tag">Work Injury</span>
+    <span class="tag">Motor Vehicle Accidents</span>
+    <span class="tag">Disability</span>
+    <span class="tag">Aged Care</span>
+    <span class="tag">Functional Assessments</span>
+    <span class="tag">Return to Work</span>
+    <span class="tag">Activities of Daily Living</span>
+    <span class="tag">Home Modifications</span>
+    <span class="tag">NDIS</span>
+    <span class="tag">Support At Home Package</span>
+  </div>
+</div>
+
+<div class="section">
+  <p class="section-label">Languages</p>
+  <div class="languages">
+    <span class="lang">English</span>
+    <span class="lang">·</span>
+    <span class="lang">Cantonese</span>
+    <span class="lang">·</span>
+    <span class="lang">Mandarin</span>
+  </div>
+</div>
+
+<div class="section">
+  <p class="section-label">Contact</p>
+  <div class="links">
+    <div class="link-row">
+      <a href="mailto:Rigan.w@rehabdynamics.com.au">Rigan.w@rehabdynamics.com.au</a>
+    </div>
+    <div class="link-row">
+      <a href="https://www.rehabdynamics.com.au" target="_blank" rel="noopener">rehabdynamics.com.au</a>
+      <span class="link-desc">Company website</span>
+    </div>
+    <div class="link-row">
+      <a href="https://www.xiaohongshu.com/search_result?keyword=Rigan+OT" target="_blank" rel="noopener">小紅書</a>
+      <span class="link-desc">Rigan OT 黃頌文</span>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <span class="copy">© Rigan Wong</span>
+  <a href="mailto:Rigan.w@rehabdynamics.com.au">Get in touch</a>
+</footer>
+```
+
+  </div><!-- /en -->
+
+  <!-- ══ CANTONESE ══ -->
+
+  <div class="t" id="yue">
+    <div class="monogram">RW</div>
+    <header>
+      <h1>黃頌文</h1>
+      <p class="subtitle">職業治療師及康復顧問</p>
+      <p class="location">澳洲悉尼</p>
+    </header>
+    <hr />
+    <p class="lead" style="font-style:normal">每一次受傷背後，都係一個人努力尋找回家路——回到家人身邊，回到熟悉嘅生活，回到自己。</p>
+    <p class="body-text">呢份信念，係我二十幾年來一直堅持落去嘅原因。我陪伴過無數人走過人生最艱難嘅時刻——工傷、交通意外、殘疾、同埋年老帶嚟嘅種種挑戰。我唔只係幫人重返工作，我係幫人重拾生活。</p>
+    <p class="body-text">我深信康復係一段非常個人化嘅旅程。每一位我服務嘅人都有自己獨特嘅故事，我會花時間真正了解佢哋嘅需要——佢哋失去咗咩，佢哋渴望得到咩，以及達到目標對佢哋意味住咩。我同樣以呢份用心，去同家屬、醫療團隊、個案經理同保險公司溝通合作。</p>
+    <hr />
+    <div class="section">
+      <p class="section-label">服務範疇</p>
+      <div class="tags">
+        <span class="tag">工傷</span>
+        <span class="tag">交通意外</span>
+        <span class="tag">殘疾支援</span>
+        <span class="tag">老人護理</span>
+        <span class="tag">功能評估</span>
+        <span class="tag">重返工作</span>
+        <span class="tag">日常生活活動</span>
+        <span class="tag">居家改裝</span>
+        <span class="tag">NDIS</span>
+        <span class="tag">居家支援計劃</span>
+      </div>
+    </div>
+    <div class="section">
+      <p class="section-label">語言</p>
+      <div class="languages">
+        <span class="lang">英語</span><span class="lang">·</span>
+        <span class="lang">廣東話</span><span class="lang">·</span>
+        <span class="lang">普通話</span>
+      </div>
+    </div>
+    <div class="section">
+      <p class="section-label">聯絡</p>
+      <div class="links">
+        <div class="link-row"><a href="mailto:Rigan.w@rehabdynamics.com.au">Rigan.w@rehabdynamics.com.au</a></div>
+        <div class="link-row"><a href="https://www.rehabdynamics.com.au" target="_blank" rel="noopener">rehabdynamics.com.au</a><span class="link-desc">公司網站</span></div>
+        <div class="link-row"><a href="https://www.xiaohongshu.com/search_result?keyword=Rigan+OT" target="_blank" rel="noopener">小紅書</a><span class="link-desc">Rigan OT 黃頌文</span></div>
+      </div>
+    </div>
+    <footer>
+      <span class="copy">© 黃頌文</span>
+      <a href="mailto:Rigan.w@rehabdynamics.com.au">立即聯絡</a>
+    </footer>
+  </div><!-- /yue -->
+
+  <!-- ══ MANDARIN ══ -->
+
+  <div class="t" id="zh">
+    <div class="monogram">RW</div>
+    <header>
+      <h1>黄颂文</h1>
+      <p class="subtitle">职业治疗师及康复顾问</p>
+      <p class="location">澳大利亚悉尼</p>
+    </header>
+    <hr />
+    <p class="lead" style="font-style:normal">每一次受伤背后，都是一个人努力寻找回家的路——回到家人身边，回到熟悉的生活，回到自己。</p>
+    <p class="body-text">这份信念，是我二十多年来一直坚持的动力。我陪伴过无数人走过人生最艰难的时刻——工伤、交通事故、残疾，以及年老带来的种种挑战。我不只是帮助人们重返工作，我是帮助他们重拾生活。</p>
+    <p class="body-text">我深信康复是一段非常个人化的旅程。每一位我服务的人都有自己独特的故事，我会花时间真正了解他们的需求——他们失去了什么，他们渴望什么，以及实现目标对他们意味着什么。我同样以这份用心，与家属、医疗团队、个案经理和保险公司沟通合作。</p>
+    <hr />
+    <div class="section">
+      <p class="section-label">服务领域</p>
+      <div class="tags">
+        <span class="tag">工伤</span>
+        <span class="tag">交通事故</span>
+        <span class="tag">残疾支持</span>
+        <span class="tag">老年护理</span>
+        <span class="tag">功能评估</span>
+        <span class="tag">重返工作</span>
+        <span class="tag">日常生活活动</span>
+        <span class="tag">居家改造</span>
+        <span class="tag">NDIS</span>
+        <span class="tag">居家支持计划</span>
+      </div>
+    </div>
+    <div class="section">
+      <p class="section-label">语言</p>
+      <div class="languages">
+        <span class="lang">英语</span><span class="lang">·</span>
+        <span class="lang">粤语</span><span class="lang">·</span>
+        <span class="lang">普通话</span>
+      </div>
+    </div>
+    <div class="section">
+      <p class="section-label">联系方式</p>
+      <div class="links">
+        <div class="link-row"><a href="mailto:Rigan.w@rehabdynamics.com.au">Rigan.w@rehabdynamics.com.au</a></div>
+        <div class="link-row"><a href="https://www.rehabdynamics.com.au" target="_blank" rel="noopener">rehabdynamics.com.au</a><span class="link-desc">公司网站</span></div>
+        <div class="link-row"><a href="https://www.xiaohongshu.com/search_result?keyword=Rigan+OT" target="_blank" rel="noopener">小红书</a><span class="link-desc">Rigan OT 黄颂文</span></div>
+      </div>
+    </div>
+    <footer>
+      <span class="copy">© 黄颂文</span>
+      <a href="mailto:Rigan.w@rehabdynamics.com.au">立即联系</a>
+    </footer>
+  </div><!-- /zh -->
+
+  </div><!-- /page -->
+
+  <script>
+    function setLang(lang, btn) {
+      document.querySelectorAll('.t').forEach(el => el.classList.remove('active'));
+      document.getElementById(lang).classList.add('active');
+      document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.documentElement.lang = lang === 'yue' ? 'zh-yue' : lang === 'zh' ? 'zh-cmn' : 'en';
+    }
+  </script>
+
+</body>
+</html>
