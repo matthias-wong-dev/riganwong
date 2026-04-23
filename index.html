@@ -14,481 +14,497 @@
       padding: 0;
     }
 
-:root {
-  --cream: #feffff;
-  --ink: #202833;
-  --mid: #536273;
-  --light: #9aa7b4;
-  --rule: #d7e0e8;
-  --accent: #2f6ea3;
-  --accent-soft: #eaf2f8;
-  --shadow: rgba(47, 110, 163, 0.08);
-}
+    :root {
+      --cream: #feffff;
+      --ink: #202833;
+      --mid: #536273;
+      --light: #9aa7b4;
+      --rule: #d7e0e8;
+      --accent: #2f6ea3;
+      --accent-soft: #eaf2f8;
+      --shadow: rgba(47, 110, 163, 0.08);
+    }
 
-html {
-  font-size: 16px;
-}
+    html {
+      font-size: 16px;
+    }
 
-body {
-  background: #ffffff;
-  color: var(--ink);
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  line-height: 1.82;
-  min-height: 100vh;
-  padding: 0 2rem;
-  opacity: 0;
-  animation: fadeIn 0.9s ease forwards;
-  animation-delay: 0.1s;
-}
+    body {
+      background: #ffffff;
+      color: var(--ink);
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      line-height: 1.82;
+      min-height: 100vh;
+      padding: 0 2rem;
+      opacity: 0;
+      animation: fadeIn 0.9s ease forwards;
+      animation-delay: 0.1s;
+    }
 
-@keyframes fadeIn {
-  to { opacity: 1; }
-}
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
 
-.page {
-  max-width: 680px;
-  margin: 0 auto;
-  padding: 5rem 0 6rem;
-}
+    .page {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 5rem 0 6rem;
+    }
 
-/* ── Header ── */
-header {
-  margin-bottom: 3rem;
-}
+    /* Header */
+    header {
+      margin-bottom: 3rem;
+    }
 
-h1 {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 300;
-  font-size: 2.7rem;
-  line-height: 1.08;
-  letter-spacing: -0.01em;
-  margin-bottom: 0.55rem;
-}
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: 2.7rem;
+      line-height: 1.08;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.55rem;
+    }
 
-.subtitle {
-  font-size: 0.78rem;
-  font-weight: 400;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--mid);
-  margin-bottom: 0.45rem;
-}
+    .subtitle {
+      font-size: 0.78rem;
+      font-weight: 400;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-bottom: 0.45rem;
+    }
 
-.location {
-  font-size: 0.82rem;
-  font-weight: 300;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--light);
-}
+    .location {
+      font-size: 0.82rem;
+      font-weight: 300;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--light);
+    }
 
-/* ── Rule ── */
-hr {
-  border: none;
-  border-top: 1px solid var(--rule);
-  margin: 2.6rem 0;
-}
+    /* Rule */
+    hr {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin: 2.6rem 0;
+    }
 
-/* ── Lead ── */
-.lead {
-  font-family: 'Cormorant Garamond', serif;
-  font-style: italic;
-  font-size: 1.42rem;
-  line-height: 1.72;
-  color: var(--ink);
-  margin-bottom: 1.8rem;
-}
+    /* Lead */
+    .lead {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.42rem;
+      line-height: 1.72;
+      color: var(--ink);
+      margin-bottom: 1.8rem;
+    }
 
-.body-text {
-  font-size: 1.08rem;
-  line-height: 1.92;
-  color: var(--mid);
-  margin-bottom: 1.45rem;
-}
+    .body-text {
+      font-size: 1.08rem;
+      line-height: 1.92;
+      color: var(--mid);
+      margin-bottom: 1.45rem;
+    }
 
-/* ── Sections ── */
-.section {
-  margin-bottom: 3.2rem;
-}
+    /* Sections */
+    .section {
+      margin-bottom: 3.2rem;
+    }
 
-.section-label {
-  font-size: 0.68rem;
-  font-weight: 500;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 1.1rem;
-}
+    .section-label {
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.1rem;
+    }
 
-/* ── Tag grid ── */
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.65rem 1.6rem;
-}
+    /* Tag grid */
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem 1.6rem;
+    }
 
-.tag {
-  font-size: 1.08rem;
-  color: var(--mid);
-  font-weight: 300;
-  position: relative;
-  padding-left: 1rem;
-  line-height: 1.7;
-}
+    .tag {
+      font-size: 1.08rem;
+      color: var(--mid);
+      font-weight: 300;
+      position: relative;
+      padding-left: 1rem;
+      line-height: 1.7;
+    }
 
-.tag::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: rgba(47, 110, 163, 0.45);
-}
+    .tag::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: rgba(47, 110, 163, 0.45);
+    }
 
-/* ── Languages ── */
-.languages {
-  display: flex;
-  gap: 1.4rem;
-  flex-wrap: wrap;
-  align-items: center;
-}
+    /* Languages */
+    .languages {
+      display: flex;
+      gap: 1.4rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
 
-.lang {
-  font-size: 1.24rem;
-  color: var(--mid);
-  font-family: 'Cormorant Garamond', serif;
-  font-style: italic;
-  line-height: 1.7;
-}
+    .lang {
+      font-size: 1.24rem;
+      color: var(--mid);
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      line-height: 1.7;
+    }
 
-/* ── Links ── */
-.links {
-  display: flex;
-  flex-direction: column;
-  gap: 0.9rem;
-}
+    /* Links */
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+    }
 
-.link-row {
-  display: flex;
-  align-items: baseline;
-  gap: 0.95rem;
-  flex-wrap: wrap;
-}
+    .link-row {
+      display: flex;
+      align-items: baseline;
+      gap: 0.95rem;
+      flex-wrap: wrap;
+    }
 
-.link-row a {
-  font-size: 1rem;
-  color: var(--ink);
-  text-decoration: none;
-  border-bottom: 1px solid var(--rule);
-  padding-bottom: 1px;
-  transition: border-color 0.2s ease, color 0.2s ease;
-}
+    .link-row a {
+      font-size: 1rem;
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 1px;
+      transition: border-color 0.2s ease, color 0.2s ease;
+    }
 
-.link-row a:hover {
-  color: var(--accent);
-  border-color: var(--accent);
-}
+    .link-row a:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
 
-.link-desc {
-  font-size: 0.86rem;
-  color: var(--light);
-}
+    .link-desc {
+      font-size: 0.86rem;
+      color: var(--light);
+    }
 
-/* ── Footer ── */
-footer {
-  margin-top: 4.75rem;
-  padding-top: 1.9rem;
-  border-top: 1px solid var(--rule);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
+    /* Footer */
+    footer {
+      margin-top: 4.75rem;
+      padding-top: 1.9rem;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
 
-footer a {
-  font-size: 0.78rem;
-  color: var(--light);
-  text-decoration: none;
-  letter-spacing: 0.09em;
-  transition: color 0.2s ease;
-}
+    footer a {
+      font-size: 0.78rem;
+      color: var(--light);
+      text-decoration: none;
+      letter-spacing: 0.09em;
+      transition: color 0.2s ease;
+    }
 
-footer a:hover {
-  color: var(--ink);
-}
+    footer a:hover {
+      color: var(--ink);
+    }
 
-footer .copy {
-  font-size: 0.78rem;
-  color: var(--light);
-}
+    footer .copy {
+      font-size: 0.78rem;
+      color: var(--light);
+    }
 
-.lang-switcher {
-  display: flex;
-  gap: 0.5rem;
-  margin-bottom: 3rem;
-  flex-wrap: wrap;
-}
+    .lang-switcher {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
+    }
 
-.lang-btn {
-  background: rgba(255, 255, 255, 0.65);
-  border: 1px solid var(--rule);
-  border-radius: 2px;
-  padding: 0.28rem 0.7rem;
-  font-family: 'Raleway', sans-serif;
-  font-size: 0.72rem;
-  font-weight: 400;
-  letter-spacing: 0.1em;
-  color: var(--light);
-  cursor: pointer;
-  transition: border-color 0.2s, color 0.2s, background-color 0.2s, box-shadow 0.2s;
-  box-shadow: 0 6px 18px rgba(32, 40, 51, 0.04);
-}
+    .lang-btn {
+      background: rgba(255, 255, 255, 0.65);
+      border: 1px solid var(--rule);
+      border-radius: 2px;
+      padding: 0.28rem 0.7rem;
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      color: var(--light);
+      cursor: pointer;
+      transition: border-color 0.2s, color 0.2s, background-color 0.2s, box-shadow 0.2s;
+      box-shadow: 0 6px 18px rgba(32, 40, 51, 0.04);
+    }
 
-.lang-btn:hover {
-  color: var(--mid);
-  border-color: rgba(47, 110, 163, 0.4);
-  background: rgba(255, 255, 255, 0.92);
-}
+    .lang-btn:hover {
+      color: var(--mid);
+      border-color: rgba(47, 110, 163, 0.4);
+      background: rgba(255, 255, 255, 0.92);
+    }
 
-.lang-btn.active {
-  border-color: var(--accent);
-  color: var(--accent);
-  background: var(--accent-soft);
-  box-shadow: 0 10px 24px var(--shadow);
-}
+    .lang-btn.active {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--accent-soft);
+      box-shadow: 0 10px 24px var(--shadow);
+    }
 
-.t { display: none; }
-.t.active { display: block; }
+    .t { display: none; }
+    .t.active { display: block; }
 
-@media (max-width: 540px) {
-  body {
-    padding: 0 1.4rem;
-  }
+    @media (max-width: 540px) {
+      body {
+        padding: 0 1.4rem;
+      }
 
-  .page {
-    padding: 4rem 0 5rem;
-  }
+      .page {
+        padding: 4rem 0 5rem;
+      }
 
-  h1 {
-    font-size: 2.35rem;
-  }
+      h1 {
+        font-size: 2.35rem;
+      }
 
-  .lead {
-    font-size: 1.26rem;
-  }
+      .lead {
+        font-size: 1.26rem;
+      }
 
-  .body-text {
-    font-size: 1.02rem;
-    line-height: 1.86;
-  }
-}
-
+      .body-text {
+        font-size: 1.02rem;
+        line-height: 1.86;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="page">
 
-
-<div class="lang-switcher">
-  <button class="lang-btn active" type="button" data-lang="en">English</button>
-  <button class="lang-btn" type="button" data-lang="yue">廣東話</button>
-  <button class="lang-btn" type="button" data-lang="zh">普通話</button>
-</div>
-
-<div class="t active" id="en">
-
-<header>
-  <h1>Rigan Wong</h1>
-  <p class="subtitle">Occupational Therapist &amp; Rehabilitation Consultant</p>
-  <p class="location">Sydney, Australia</p>
-</header>
-
-<hr />
-
-<p class="lead">Behind every injury is a person trying to find their way back — to their family, their routine, their sense of self.</p>
-
-<p class="body-text">
-  That's what drives me. For over 20 years, I've walked alongside people navigating some of the most difficult moments of their lives — after workplace injuries, motor vehicle accidents, and through the challenges of disability and ageing. I don't just help people return to work. I help them come back to life.
-</p>
-
-<p class="body-text">
-  I believe recovery is deeply personal. Every person I work with has a unique story, and I take time to truly understand what matters to them — what they've lost, what they're hoping for, and what it would mean to get there. I bring that same care into every conversation with families, healthcare providers, case managers, and insurers.
-</p>
-
-<hr />
-
-<div class="section">
-  <p class="section-label">Practice Areas</p>
-  <div class="tags">
-    <span class="tag">Work Injury</span>
-    <span class="tag">Motor Vehicle Accidents</span>
-    <span class="tag">Disability</span>
-    <span class="tag">Aged Care</span>
-    <span class="tag">Functional Assessments</span>
-    <span class="tag">Return to Work</span>
-    <span class="tag">Activities of Daily Living</span>
-    <span class="tag">Home Modifications</span>
-    <span class="tag">NDIS</span>
-    <span class="tag">Support At Home Package</span>
-  </div>
-</div>
-
-<div class="section">
-  <p class="section-label">Languages</p>
-  <div class="languages">
-    <span class="lang">English</span>
-    <span class="lang">·</span>
-    <span class="lang">Cantonese</span>
-    <span class="lang">·</span>
-    <span class="lang">Mandarin</span>
-  </div>
-</div>
-
-<div class="section">
-  <p class="section-label">Contact</p>
-  <div class="links">
-    <div class="link-row">
-      <a href="mailto:rigan.w@rehabdynamics.com.au">rigan.w@rehabdynamics.com.au</a>
+    <div class="lang-switcher">
+      <button class="lang-btn active" type="button" data-lang="en">English</button>
+      <button class="lang-btn" type="button" data-lang="yue">廣東話</button>
+      <button class="lang-btn" type="button" data-lang="zh">普通話</button>
     </div>
-    <div class="link-row">
-      <a href="https://www.rehabdynamics.com.au" target="_blank" rel="noopener">rehabdynamics.com.au</a>
-      <span class="link-desc">Company website</span>
-    </div>
-    <div class="link-row">
-      <a href="https://www.xiaohongshu.com/search_result?keyword=Rigan+OT" target="_blank" rel="noopener">小紅書</a>
-      <span class="link-desc">Rigan OT 黃頌文</span>
-    </div>
-  </div>
-</div>
 
-<footer>
-  <span class="copy">© Rigan Wong</span>
-  <a href="mailto:rigan.w@rehabdynamics.com.au">Get in touch</a>
-</footer>
+    <div class="t active" id="en">
+      <header>
+        <h1>Rigan Wong</h1>
+        <p class="subtitle">Occupational Therapist · Rehabilitation Counsellor &amp; Consultant</p>
+        <p class="location">Sydney, Australia</p>
+      </header>
 
+      <hr />
 
-  </div><!-- /en -->
+      <p class="lead">Behind every injury is a person trying to find their way back — to their family, their routine, their sense of self.</p>
 
-  <!-- ══ CANTONESE ══ -->
+      <p class="body-text">
+        That's what drives me. For over 20 years, I've walked alongside people navigating some of the most difficult moments of their lives — after workplace injuries, motor vehicle accidents, and through the challenges of disability and ageing. I don't just help people return to work. I help them come back to life.
+      </p>
 
-  <div class="t" id="yue">
-    <header>
-      <h1>黃頌文</h1>
-      <p class="subtitle">職業治療師及康復顧問</p>
-      <p class="location">澳洲悉尼</p>
-    </header>
-    <hr />
-    <p class="lead" style="font-style:normal">每一次受傷背後，都係一個人努力尋找回家路——回到家人身邊，回到熟悉嘅生活，回到自己。</p>
-    <p class="body-text">呢份信念，係我二十幾年來一直堅持落去嘅原因。我陪伴過無數人走過人生最艱難嘅時刻——工傷、交通意外、殘疾、同埋年老帶嚟嘅種種挑戰。我唔只係幫人重返工作，我係幫人重拾生活。</p>
-    <p class="body-text">我深信康復係一段非常個人化嘅旅程。每一位我服務嘅人都有自己獨特嘅故事，我會花時間真正了解佢哋嘅需要——佢哋失去咗咩，佢哋渴望得到咩，以及達到目標對佢哋意味住咩。我同樣以呢份用心，去同家屬、醫療團隊、個案經理同保險公司溝通合作。</p>
-    <hr />
-    <div class="section">
-      <p class="section-label">服務範疇</p>
-      <div class="tags">
-        <span class="tag">工傷</span>
-        <span class="tag">交通意外</span>
-        <span class="tag">殘疾支援</span>
-        <span class="tag">老人護理</span>
-        <span class="tag">功能評估</span>
-        <span class="tag">重返工作</span>
-        <span class="tag">日常生活活動</span>
-        <span class="tag">居家改裝</span>
-        <span class="tag">NDIS</span>
-        <span class="tag">居家支援計劃</span>
+      <p class="body-text">
+        I believe recovery is deeply personal. Every person I work with has a unique story, and I take time to truly understand what matters to them — what they've lost, what they're hoping for, and what it would mean to get there. I bring that same care into every conversation with families, healthcare providers, case managers, and insurers.
+      </p>
+
+      <hr />
+
+      <div class="section">
+        <p class="section-label">Practice Areas</p>
+        <div class="tags">
+          <span class="tag">Work Injury</span>
+          <span class="tag">Motor Vehicle Accidents</span>
+          <span class="tag">Disability</span>
+          <span class="tag">Aged Care</span>
+          <span class="tag">Functional Assessments</span>
+          <span class="tag">Return to Work</span>
+          <span class="tag">Activities of Daily Living</span>
+          <span class="tag">Home Modifications</span>
+          <span class="tag">NDIS</span>
+          <span class="tag">Support At Home Package</span>
+          <span class="tag">Vocational Assessment</span>
+          <span class="tag">Rehabilitation Counselling</span>
+          <span class="tag">Medico-Legal Assessment</span>
+        </div>
       </div>
-    </div>
-    <div class="section">
-      <p class="section-label">語言</p>
-      <div class="languages">
-        <span class="lang">英語</span><span class="lang">·</span>
-        <span class="lang">廣東話</span><span class="lang">·</span>
-        <span class="lang">普通話</span>
-      </div>
-    </div>
-    <div class="section">
-      <p class="section-label">聯絡</p>
-      <div class="links">
-        <div class="link-row"><a href="mailto:rigan.w@rehabdynamics.com.au">rigan.w@rehabdynamics.com.au</a></div>
-        <div class="link-row"><a href="https://www.rehabdynamics.com.au" target="_blank" rel="noopener">rehabdynamics.com.au</a><span class="link-desc">公司網站</span></div>
-        <div class="link-row"><a href="https://www.xiaohongshu.com/search_result?keyword=Rigan+OT" target="_blank" rel="noopener">小紅書</a><span class="link-desc">Rigan OT 黃頌文</span></div>
-      </div>
-    </div>
-    <footer>
-      <span class="copy">© 黃頌文</span>
-      <a href="mailto:rigan.w@rehabdynamics.com.au">立即聯絡</a>
-    </footer>
-  </div><!-- /yue -->
 
-  <!-- ══ MANDARIN ══ -->
+      <div class="section">
+        <p class="section-label">Languages</p>
+        <div class="languages">
+          <span class="lang">English</span>
+          <span class="lang">·</span>
+          <span class="lang">Cantonese</span>
+          <span class="lang">·</span>
+          <span class="lang">Mandarin</span>
+        </div>
+      </div>
 
-  <div class="t" id="zh">
-    <header>
-      <h1>黄颂文</h1>
-      <p class="subtitle">职业治疗师及康复顾问</p>
-      <p class="location">澳大利亚悉尼</p>
-    </header>
-    <hr />
-    <p class="lead" style="font-style:normal">每一次受伤背后，都是一个人努力寻找回家的路——回到家人身边，回到熟悉的生活，回到自己。</p>
-    <p class="body-text">这份信念，是我二十多年来一直坚持的动力。我陪伴过无数人走过人生最艰难的时刻——工伤、交通事故、残疾，以及年老带来的种种挑战。我不只是帮助人们重返工作，我是帮助他们重拾生活。</p>
-    <p class="body-text">我深信康复是一段非常个人化的旅程。每一位我服务的人都有自己独特的故事，我会花时间真正了解他们的需求——他们失去了什么，他们渴望什么，以及实现目标对他们意味着什么。我同样以这份用心，与家属、医疗团队、个案经理和保险公司沟通合作。</p>
-    <hr />
-    <div class="section">
-      <p class="section-label">服务领域</p>
-      <div class="tags">
-        <span class="tag">工伤</span>
-        <span class="tag">交通事故</span>
-        <span class="tag">残疾支持</span>
-        <span class="tag">老年护理</span>
-        <span class="tag">功能评估</span>
-        <span class="tag">重返工作</span>
-        <span class="tag">日常生活活动</span>
-        <span class="tag">居家改造</span>
-        <span class="tag">NDIS</span>
-        <span class="tag">居家支持计划</span>
+      <div class="section">
+        <p class="section-label">Contact</p>
+        <div class="links">
+          <div class="link-row">
+            <a href="mailto:Rigan.w@rehabdynamics.com.au">Rigan.w@rehabdynamics.com.au</a>
+          </div>
+          <div class="link-row">
+            <a href="https://www.rehabdynamics.com.au" target="_blank" rel="noopener">rehabdynamics.com.au</a>
+            <span class="link-desc">Company website</span>
+          </div>
+          <div class="link-row">
+            <a href="https://xhslink.com/m/6XdgtLNaFhJ" target="_blank" rel="noopener">小紅書</a>
+            <span class="link-desc">Rigan OT 黃頌文</span>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="section">
-      <p class="section-label">语言</p>
-      <div class="languages">
-        <span class="lang">英语</span><span class="lang">·</span>
-        <span class="lang">粤语</span><span class="lang">·</span>
-        <span class="lang">普通话</span>
+
+      <footer>
+        <span class="copy">© Rigan Wong</span>
+        <a href="mailto:Rigan.w@rehabdynamics.com.au">Get in touch</a>
+      </footer>
+    </div><!-- /en -->
+
+    <!-- CANTONESE -->
+
+    <div class="t" id="yue">
+      <header>
+        <h1>黃頌文</h1>
+        <p class="subtitle">職業治療師 · 康復輔導員及顧問</p>
+        <p class="location">澳洲悉尼</p>
+      </header>
+      <hr />
+      <p class="lead" style="font-style:normal">每一次受傷背後，都係一個人努力尋找回家路——回到家人身邊，回到熟悉嘅生活，回到自己。</p>
+      <p class="body-text">呢份信念，係我二十幾年來一直堅持落去嘅原因。我陪伴過無數人走過人生最艱難嘅時刻——工傷、交通意外、殘疾、同埋年老帶嚟嘅種種挑戰。我唔只係幫人重返工作，我係幫人重拾生活。</p>
+      <p class="body-text">我深信康復係一段非常個人化嘅旅程。每一位我服務嘅人都有自己獨特嘅故事，我會花時間真正了解佢哋嘅需要——佢哋失去咗咩，佢哋渴望得到咩，以及達到目標對佢哋意味住咩。我同樣以呢份用心，去同家屬、醫療團隊、個案經理同保險公司溝通合作。</p>
+      <hr />
+      <div class="section">
+        <p class="section-label">服務範疇</p>
+        <div class="tags">
+          <span class="tag">工傷</span>
+          <span class="tag">交通意外</span>
+          <span class="tag">殘疾支援</span>
+          <span class="tag">老人護理</span>
+          <span class="tag">功能評估</span>
+          <span class="tag">重返工作</span>
+          <span class="tag">日常生活活動</span>
+          <span class="tag">居家改裝</span>
+          <span class="tag">NDIS</span>
+          <span class="tag">居家支援計劃</span>
+          <span class="tag">職業評估</span>
+          <span class="tag">康復輔導</span>
+          <span class="tag">醫療法律評估</span>
+        </div>
       </div>
-    </div>
-    <div class="section">
-      <p class="section-label">联系方式</p>
-      <div class="links">
-        <div class="link-row"><a href="mailto:rigan.w@rehabdynamics.com.au">rigan.w@rehabdynamics.com.au</a></div>
-        <div class="link-row"><a href="https://www.rehabdynamics.com.au" target="_blank" rel="noopener">rehabdynamics.com.au</a><span class="link-desc">公司网站</span></div>
-        <div class="link-row"><a href="https://www.xiaohongshu.com/search_result?keyword=Rigan+OT" target="_blank" rel="noopener">小红书</a><span class="link-desc">Rigan OT 黄颂文</span></div>
+      <div class="section">
+        <p class="section-label">語言</p>
+        <div class="languages">
+          <span class="lang">英語</span><span class="lang">·</span>
+          <span class="lang">廣東話</span><span class="lang">·</span>
+          <span class="lang">普通話</span>
+        </div>
       </div>
-    </div>
-    <footer>
-      <span class="copy">© 黄颂文</span>
-      <a href="mailto:rigan.w@rehabdynamics.com.au">立即联系</a>
-    </footer>
-  </div><!-- /zh -->
+      <div class="section">
+        <p class="section-label">聯絡</p>
+        <div class="links">
+          <div class="link-row"><a href="mailto:Rigan.w@rehabdynamics.com.au">Rigan.w@rehabdynamics.com.au</a></div>
+          <div class="link-row"><a href="https://www.rehabdynamics.com.au" target="_blank" rel="noopener">rehabdynamics.com.au</a><span class="link-desc">公司網站</span></div>
+          <div class="link-row"><a href="https://xhslink.com/m/6XdgtLNaFhJ" target="_blank" rel="noopener">小紅書</a><span class="link-desc">Rigan OT 黃頌文</span></div>
+        </div>
+      </div>
+      <footer>
+        <span class="copy">© 黃頌文</span>
+        <a href="mailto:Rigan.w@rehabdynamics.com.au">立即聯絡</a>
+      </footer>
+    </div><!-- /yue -->
+
+    <!-- MANDARIN -->
+
+    <div class="t" id="zh">
+      <header>
+        <h1>黄颂文</h1>
+        <p class="subtitle">职业治疗师 · 康复咨询师及顾问</p>
+        <p class="location">澳大利亚悉尼</p>
+      </header>
+      <hr />
+      <p class="lead" style="font-style:normal">每一次受伤背后，都是一个人努力寻找回家的路——回到家人身边，回到熟悉的生活，回到自己。</p>
+      <p class="body-text">这份信念，是我二十多年来一直坚持的动力。我陪伴过无数人走过人生最艰难的时刻——工伤、交通事故、残疾，以及年老带来的种种挑战。我不只是帮助人们重返工作，我是帮助他们重拾生活。</p>
+      <p class="body-text">我深信康复是一段非常个人化的旅程。每一位我服务的人都有自己独特的故事，我会花时间真正了解他们的需求——他们失去了什么，他们渴望什么，以及实现目标对他们意味着什么。我同样以这份用心，与家属、医疗团队、个案经理和保险公司沟通合作。</p>
+      <hr />
+      <div class="section">
+        <p class="section-label">服务领域</p>
+        <div class="tags">
+          <span class="tag">工伤</span>
+          <span class="tag">交通事故</span>
+          <span class="tag">残疾支持</span>
+          <span class="tag">老年护理</span>
+          <span class="tag">功能评估</span>
+          <span class="tag">重返工作</span>
+          <span class="tag">日常生活活动</span>
+          <span class="tag">居家改造</span>
+          <span class="tag">NDIS</span>
+          <span class="tag">居家支持计划</span>
+          <span class="tag">职业评估</span>
+          <span class="tag">康复咨询</span>
+          <span class="tag">医疗法律评估</span>
+        </div>
+      </div>
+      <div class="section">
+        <p class="section-label">语言</p>
+        <div class="languages">
+          <span class="lang">英语</span><span class="lang">·</span>
+          <span class="lang">粤语</span><span class="lang">·</span>
+          <span class="lang">普通话</span>
+        </div>
+      </div>
+      <div class="section">
+        <p class="section-label">联系方式</p>
+        <div class="links">
+          <div class="link-row"><a href="mailto:Rigan.w@rehabdynamics.com.au">Rigan.w@rehabdynamics.com.au</a></div>
+          <div class="link-row"><a href="https://www.rehabdynamics.com.au" target="_blank" rel="noopener">rehabdynamics.com.au</a><span class="link-desc">公司网站</span></div>
+          <div class="link-row"><a href="https://xhslink.com/m/6XdgtLNaFhJ" target="_blank" rel="noopener">小红书</a><span class="link-desc">Rigan OT 黄颂文</span></div>
+        </div>
+      </div>
+      <footer>
+        <span class="copy">© 黄颂文</span>
+        <a href="mailto:Rigan.w@rehabdynamics.com.au">立即联系</a>
+      </footer>
+    </div><!-- /zh -->
 
   </div><!-- /page -->
 
   <script>
-    const LANG_CODES = ['en', 'yue', 'zh'];
-    const STORAGE_KEY = 'preferredLanguage';
+    function setLang(lang, options = {}) {
+      const { updateUrl = true, persist = true } = options;
+      document.querySelectorAll('.t').forEach(el => el.classList.remove('active'));
+      document.getElementById(lang).classList.add('active');
 
-    function mapHtmlLang(lang) {
-      if (lang === 'yue') return 'zh-HK';
-      if (lang === 'zh') return 'zh-CN';
-      return 'en';
+      document.querySelectorAll('.lang-btn').forEach(button => {
+        button.classList.toggle('active', button.dataset.lang === lang);
+      });
+
+      document.documentElement.lang = lang === 'yue' ? 'zh-HK' : lang === 'zh' ? 'zh-CN' : 'en';
+
+      if (persist) {
+        localStorage.setItem('preferredLanguage', lang);
+      }
+
+      if (updateUrl) {
+        const url = new URL(window.location.href);
+        url.searchParams.set('lang', lang);
+        history.replaceState({}, '', url);
+      }
     }
 
     function normalizeLang(value) {
       if (!value) return null;
-
       const lower = value.toLowerCase();
 
       if (lower === 'en' || lower.startsWith('en-')) return 'en';
@@ -519,13 +535,7 @@ footer .copy {
 
     function getLangFromUrl() {
       const url = new URL(window.location.href);
-      const lang = normalizeLang(url.searchParams.get('lang'));
-      if (lang) return lang;
-
-      const hashLang = normalizeLang(window.location.hash.replace('#', ''));
-      if (hashLang) return hashLang;
-
-      return null;
+      return normalizeLang(url.searchParams.get('lang')) || normalizeLang(window.location.hash.replace('#', ''));
     }
 
     function getBrowserLang() {
@@ -541,29 +551,6 @@ footer .copy {
       return 'en';
     }
 
-    function setLang(lang, options = {}) {
-      const { updateUrl = true, persist = true } = options;
-
-      document.querySelectorAll('.t').forEach(el => el.classList.remove('active'));
-      document.getElementById(lang).classList.add('active');
-
-      document.querySelectorAll('.lang-btn').forEach(button => {
-        button.classList.toggle('active', button.dataset.lang === lang);
-      });
-
-      document.documentElement.lang = mapHtmlLang(lang);
-
-      if (persist) {
-        localStorage.setItem(STORAGE_KEY, lang);
-      }
-
-      if (updateUrl) {
-        const url = new URL(window.location.href);
-        url.searchParams.set('lang', lang);
-        history.replaceState({}, '', url);
-      }
-    }
-
     document.querySelectorAll('.lang-btn').forEach(button => {
       button.addEventListener('click', () => {
         setLang(button.dataset.lang);
@@ -571,7 +558,7 @@ footer .copy {
     });
 
     const urlLang = getLangFromUrl();
-    const savedLang = normalizeLang(localStorage.getItem(STORAGE_KEY));
+    const savedLang = normalizeLang(localStorage.getItem('preferredLanguage'));
     const initialLang = urlLang || savedLang || getBrowserLang();
 
     setLang(initialLang, {
