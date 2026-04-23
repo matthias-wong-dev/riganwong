@@ -75,6 +75,15 @@
       margin-bottom: 0.45rem;
     }
 
+    .credential {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      font-style: italic;
+      letter-spacing: 0.03em;
+      color: var(--accent);
+      margin-bottom: 0.55rem;
+    }
+
     .location {
       font-size: 0.82rem;
       font-weight: 300;
@@ -121,6 +130,12 @@
       margin-bottom: 1.1rem;
     }
 
+    #yue .section-label,
+    #zh .section-label {
+      font-size: 0.82rem;
+      letter-spacing: 0.14em;
+    }
+
     /* Tag grid */
     .tags {
       display: flex;
@@ -149,6 +164,33 @@
       background: rgba(47, 110, 163, 0.45);
     }
 
+    .feature-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.6rem;
+    }
+
+    .feature {
+      font-size: 1rem;
+      color: var(--mid);
+      font-weight: 300;
+      position: relative;
+      padding-left: 1rem;
+      line-height: 1.7;
+    }
+
+    .feature::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.78em;
+      transform: translateY(-50%);
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: rgba(47, 110, 163, 0.45);
+    }
+
     /* Languages */
     .languages {
       display: flex;
@@ -158,10 +200,10 @@
     }
 
     .lang {
-      font-size: 1.24rem;
+      font-size: 1.08rem;
       color: var(--mid);
-      font-family: 'Cormorant Garamond', serif;
-      font-style: italic;
+      font-family: 'Raleway', sans-serif;
+      font-style: normal;
       line-height: 1.7;
     }
 
@@ -302,6 +344,7 @@
       <header>
         <h1>Rigan Wong</h1>
         <p class="subtitle">Occupational Therapist · Rehabilitation Counsellor &amp; Consultant</p>
+        <p class="credential">University of Sydney</p>
         <p class="location">Sydney, Australia</p>
       </header>
 
@@ -318,6 +361,17 @@
       </p>
 
       <hr />
+
+      <div class="section">
+        <p class="section-label">Client Experience</p>
+        <div class="feature-list">
+          <span class="feature">Attentive, personalised care</span>
+          <span class="feature">Equitable access across language and system barriers</span>
+          <span class="feature">Waiting time less than one week</span>
+          <span class="feature">Successful return to work rate over 90%</span>
+          <span class="feature">Free initial consultation</span>
+        </div>
+      </div>
 
       <div class="section">
         <p class="section-label">Practice Areas</p>
@@ -338,6 +392,8 @@
         </div>
       </div>
 
+      <hr />
+
       <div class="section">
         <p class="section-label">Languages</p>
         <div class="languages">
@@ -353,22 +409,17 @@
         <p class="section-label">Contact</p>
         <div class="links">
           <div class="link-row">
-            <a href="mailto:Rigan.w@rehabdynamics.com.au">Rigan.w@rehabdynamics.com.au</a>
+            <a href="mailto:rigan.w@rehabdynamics.com.au">rigan.w@rehabdynamics.com.au</a>
           </div>
           <div class="link-row">
             <a href="https://www.rehabdynamics.com.au" target="_blank" rel="noopener">rehabdynamics.com.au</a>
             <span class="link-desc">Company website</span>
-          </div>
-          <div class="link-row">
-            <a href="https://xhslink.com/m/6XdgtLNaFhJ" target="_blank" rel="noopener">小紅書</a>
-            <span class="link-desc">Rigan OT 黃頌文</span>
           </div>
         </div>
       </div>
 
       <footer>
         <span class="copy">© Rigan Wong</span>
-        <a href="mailto:Rigan.w@rehabdynamics.com.au">Get in touch</a>
       </footer>
     </div><!-- /en -->
 
@@ -378,6 +429,7 @@
       <header>
         <h1>黃頌文</h1>
         <p class="subtitle">職業治療師 · 康復輔導員及顧問</p>
+        <p class="credential">悉尼大學</p>
         <p class="location">澳洲悉尼</p>
       </header>
       <hr />
@@ -385,6 +437,15 @@
       <p class="body-text">呢份信念，係我二十幾年來一直堅持落去嘅原因。我陪伴過無數人走過人生最艱難嘅時刻——工傷、交通意外、殘疾、同埋年老帶嚟嘅種種挑戰。我唔只係幫人重返工作，我係幫人重拾生活。</p>
       <p class="body-text">我深信康復係一段非常個人化嘅旅程。每一位我服務嘅人都有自己獨特嘅故事，我會花時間真正了解佢哋嘅需要——佢哋失去咗咩，佢哋渴望得到咩，以及達到目標對佢哋意味住咩。我同樣以呢份用心，去同家屬、醫療團隊、個案經理同保險公司溝通合作。</p>
       <hr />
+      <div class="section">
+        <p class="section-label">客戶體驗</p>
+        <div class="feature-list">
+          <span class="feature">細心同貼身嘅照顧</span>
+          <span class="feature">跨越語言同制度障礙，提供平等服務機會</span>
+          <span class="feature">一般等候時間少於一星期</span>
+          <span class="feature">免費初步諮詢</span>
+        </div>
+      </div>
       <div class="section">
         <p class="section-label">服務範疇</p>
         <div class="tags">
@@ -403,6 +464,8 @@
           <span class="tag">醫療法律評估</span>
         </div>
       </div>
+      <hr />
+
       <div class="section">
         <p class="section-label">語言</p>
         <div class="languages">
@@ -411,17 +474,17 @@
           <span class="lang">普通話</span>
         </div>
       </div>
+
       <div class="section">
         <p class="section-label">聯絡</p>
         <div class="links">
-          <div class="link-row"><a href="mailto:Rigan.w@rehabdynamics.com.au">Rigan.w@rehabdynamics.com.au</a></div>
+          <div class="link-row"><a href="mailto:rigan.w@rehabdynamics.com.au">rigan.w@rehabdynamics.com.au</a></div>
           <div class="link-row"><a href="https://www.rehabdynamics.com.au" target="_blank" rel="noopener">rehabdynamics.com.au</a><span class="link-desc">公司網站</span></div>
           <div class="link-row"><a href="https://xhslink.com/m/6XdgtLNaFhJ" target="_blank" rel="noopener">小紅書</a><span class="link-desc">Rigan OT 黃頌文</span></div>
         </div>
       </div>
       <footer>
         <span class="copy">© 黃頌文</span>
-        <a href="mailto:Rigan.w@rehabdynamics.com.au">立即聯絡</a>
       </footer>
     </div><!-- /yue -->
 
@@ -431,6 +494,7 @@
       <header>
         <h1>黄颂文</h1>
         <p class="subtitle">职业治疗师 · 康复咨询师及顾问</p>
+        <p class="credential">悉尼大学</p>
         <p class="location">澳大利亚悉尼</p>
       </header>
       <hr />
@@ -438,6 +502,15 @@
       <p class="body-text">这份信念，是我二十多年来一直坚持的动力。我陪伴过无数人走过人生最艰难的时刻——工伤、交通事故、残疾，以及年老带来的种种挑战。我不只是帮助人们重返工作，我是帮助他们重拾生活。</p>
       <p class="body-text">我深信康复是一段非常个人化的旅程。每一位我服务的人都有自己独特的故事，我会花时间真正了解他们的需求——他们失去了什么，他们渴望什么，以及实现目标对他们意味着什么。我同样以这份用心，与家属、医疗团队、个案经理和保险公司沟通合作。</p>
       <hr />
+      <div class="section">
+        <p class="section-label">客户体验</p>
+        <div class="feature-list">
+          <span class="feature">细心且个性化的服务</span>
+          <span class="feature">跨越语言与制度障碍，提供平等服务机会</span>
+          <span class="feature">一般等候时间少于一周</span>
+          <span class="feature">免费初步咨询</span>
+        </div>
+      </div>
       <div class="section">
         <p class="section-label">服务领域</p>
         <div class="tags">
@@ -456,6 +529,8 @@
           <span class="tag">医疗法律评估</span>
         </div>
       </div>
+      <hr />
+
       <div class="section">
         <p class="section-label">语言</p>
         <div class="languages">
@@ -464,17 +539,17 @@
           <span class="lang">普通话</span>
         </div>
       </div>
+
       <div class="section">
         <p class="section-label">联系方式</p>
         <div class="links">
-          <div class="link-row"><a href="mailto:Rigan.w@rehabdynamics.com.au">Rigan.w@rehabdynamics.com.au</a></div>
+          <div class="link-row"><a href="mailto:rigan.w@rehabdynamics.com.au">rigan.w@rehabdynamics.com.au</a></div>
           <div class="link-row"><a href="https://www.rehabdynamics.com.au" target="_blank" rel="noopener">rehabdynamics.com.au</a><span class="link-desc">公司网站</span></div>
           <div class="link-row"><a href="https://xhslink.com/m/6XdgtLNaFhJ" target="_blank" rel="noopener">小红书</a><span class="link-desc">Rigan OT 黄颂文</span></div>
         </div>
       </div>
       <footer>
         <span class="copy">© 黄颂文</span>
-        <a href="mailto:Rigan.w@rehabdynamics.com.au">立即联系</a>
       </footer>
     </div><!-- /zh -->
 
